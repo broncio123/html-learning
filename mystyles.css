@@ -1,0 +1,18 @@
+p {
+    text-align: center;
+    color: rgba(0,0,250,0.5);
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+mark {
+    background: rgb(0, 229, 255)!important;
+
+}
+
+.mylistitems {
+    color: rgba(21, 85, 7, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+}
