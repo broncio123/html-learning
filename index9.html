@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML div Element Tutorial</title>
+    </head>
+    <body>
+        <h2 style="text-align: center;">Basic properties of containers</h2>
+
+        <p><b>Example 1:</b> Div container inserted into a paragraph. Note how the container starts a new block, adding line breaks before and after, taking the full page width.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <div>Porro alias ratione voluptatem dolorem nobis eveniet amet temporibus odit non</div>, soluta fuga consectetur eos, ea repellat officia officiis voluptates ducimus commodi.</p>
+
+        <p><b>Example 2</b>: Defining a div container</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellendus esse tempora consequatur consequuntur aliquid accusamus ea cumque alias! Assumenda recusandae nostrum repellendus quidem quisquam repellat, non voluptas quaerat magnam!</p>
+        </div>
+
+        <p><b>Example 3</b>: Centre a div element with the margim:auto CSS property.</p>
+        <div style="width:300px; margin: auto;">
+            <h3>Hello there!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure perspiciatis odio impedit vero dolore quia voluptatibus eos, commodi beatae temporibus eligendi aut dignissimos aspernatur ipsa consequuntur nostrum sit. At, aperiam.</p>
+        </div>
+
+        <p><b>Example 4</b>: Defining several div container sequentially.</p>
+        <!--My first container-->
+        <div style="background-color: bisque;">
+            <h2>My header 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eius omnis veritatis expedita iste voluptas quae autem obcaecati quasi ab consequuntur placeat a, ea delectus sapiente id numquam, velit minima?</p>
+        </div>
+        <!--My second container-->
+        <div style="background-color: cornflowerblue;">
+            <h2>My header 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate, veniam impedit nobis inventore vel exercitationem fugiat similique necessitatibus dicta magni consequuntur iste error maiores iure temporibus cupiditate, placeat laudantium?</p>
+        </div>
+        <!--My third block-->
+        <div style="background-color: darkseagreen;">
+            <h2>My header 3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore cupiditate ducimus voluptatibus placeat reprehenderit quas quae obcaecati modi perferendis odit incidunt, ut perspiciatis nisi natus iure quod, blanditiis assumenda voluptatum?</p>
+        </div>
+
+        <h2 style="text-align: center;">An array of containers</h2>
+        <p>There are different ways to do it using CSS styling. Here I show a few different ways I found <a title="Link to an HTML tutorial on div by W3 Schools" href="https://www.w3schools.com/html/html_div.asp">here</a></p>
+
+        <p><b>Method 1:</b> Using the float method.</p>
+
+        <p>Here we're setting a fixed width for each container to 33% of the full page width, and make block float to the left. This removes any linebreaks before and after a div.</p>
+        <p><mark>Note:</mark> If the text is of unequal length, the height of each container will differ. You can fix this by fixing the container height.</p>
+
+        <!--My array of containers-->   
+        <div style="width: 33%; float: left; background-color: bisque;">
+            <h2>My header 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eius omnis veritatis expedita iste voluptas quae autem obcaecati quasi ab consequuntur placeat a, ea delectus sapiente id numquam, velit minima?</p>
+        </div>
+        
+        <div style="width: 33%; float: left; background-color: cornflowerblue;">
+            <h2>My header 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate, veniam impedit nobis inventore vel exercitationem fugiat similique necessitatibus dicta magni consequuntur iste error maiores iure temporibus cupiditate, placeat laudantium?</p>
+        </div>
+
+        <div style="width: 33%; float: left; background-color: darkseagreen;">
+            <h2>My header 3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore cupiditate ducimus voluptatibus placeat reprehenderit quas quae obcaecati modi perferendis odit incidunt, ut perspiciatis nisi natus iure quod, blanditiis assumenda voluptatum?</p>
+        </div>
+
+        <p><b>Method 2:</b> Switch the display property to inline-block.</p>
+        <p><mark>Note:</mark> Resizing the browser window will make containers flow downwards to accomodate them each time. By contrast, the float method will always keep the divs in the same line. </p>
+
+         <!--My array of containers-->   
+         <div style="width: 33%; display: inline-block; background-color: bisque;">
+            <h2>My header 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eius omnis veritatis expedita iste voluptas quae autem obcaecati quasi ab consequuntur placeat a, ea delectus sapiente id numquam, velit minima?</p>
+        </div>
+        
+        <div style="width: 33%; display:inline-block; background-color: cornflowerblue;">
+            <h2>My header 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate, veniam impedit nobis inventore vel exercitationem fugiat similique necessitatibus dicta magni consequuntur iste error maiores iure temporibus cupiditate, placeat laudantium?</p>
+        </div>
+
+        <div style="width: 33%; display: inline-block; background-color: darkseagreen;">
+            <h2>My header 3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore cupiditate ducimus voluptatibus placeat reprehenderit quas quae obcaecati modi perferendis odit incidunt, ut perspiciatis nisi natus iure quod, blanditiis assumenda voluptatum?</p>
+        </div>
+       
+        <p><b>Method 3:</b> Using flex as the display property value.</p>
+        <p><mark>Note:</mark> This uses the flexbox layout module to facilitate responsive design without using float or positioning. However, it requires add the child containers into a parent order container. </p>
+
+        <!--My array of containers-->
+        <div style="display: flex;">
+            <div style="width: 33%; background-color: bisque;">
+                <h2>My header 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eius omnis veritatis expedita iste voluptas quae autem obcaecati quasi ab consequuntur placeat a, ea delectus sapiente id numquam, velit minima?</p>
+            </div>
+            
+            <div style="width: 33%; background-color: cornflowerblue;">
+                <h2>My header 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate, veniam impedit nobis inventore vel exercitationem fugiat similique necessitatibus dicta magni consequuntur iste error maiores iure temporibus cupiditate, placeat laudantium?</p>
+            </div>
+    
+            <div style="width: 33%; background-color: darkseagreen;">
+                <h2>My header 3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore cupiditate ducimus voluptatibus placeat reprehenderit quas quae obcaecati modi perferendis odit incidunt, ut perspiciatis nisi natus iure quod, blanditiis assumenda voluptatum?</p>
+            </div>
+        </div>
+
+        <p><b>Method 4:</b> Using the grid method.</p>
+        <p><mark>Note:</mark> The CSS Grid Layout module offers a grid-based layout system, with rows and columns to arrange elements without using float or positioning. Widht the grid method you can specify the widht of every column in a single place, instead of each individual div.</p>
+
+        <div style="display: grid; grid-template-columns: 33% 33% 33%;">
+            <!--My first container-->
+            <div style="background-color: bisque;">
+                <h2>My header 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eius omnis veritatis expedita iste voluptas quae autem obcaecati quasi ab consequuntur placeat a, ea delectus sapiente id numquam, velit minima?</p>
+            </div>
+            <!--My second container-->
+            <div style="background-color: cornflowerblue;">
+                <h2>My header 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptate, veniam impedit nobis inventore vel exercitationem fugiat similique necessitatibus dicta magni consequuntur iste error maiores iure temporibus cupiditate, placeat laudantium?</p>
+            </div>
+            <!--My third block-->
+            <div style="background-color: darkseagreen;">
+                <h2>My header 3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore cupiditate ducimus voluptatibus placeat reprehenderit quas quae obcaecati modi perferendis odit incidunt, ut perspiciatis nisi natus iure quod, blanditiis assumenda voluptatum?</p>
+            </div>
+        </div>
+
+    </body>
+</html>
